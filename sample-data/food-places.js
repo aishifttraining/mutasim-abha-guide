@@ -1,0 +1,211 @@
+const asirFoodPlaces = [
+  {
+    id: "sadf-restaurant-abha",
+    region: "abha",
+    type: "restaurant",
+    name: { ar: "مطعم صدف", en: "Sadf Restaurant" },
+    description: { ar: "مطعم في أبها يقدم خيارات طعام ومشروبات.", en: "A restaurant in Abha serving food and drink choices." },
+    imageAlt: { ar: "صورة محلية لمطعم صدف في أبها", en: "Local photo for Sadf Restaurant in Abha" },
+    image: "images/food/sadf-restaurant-abha.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Sadf%2C%20Abha%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "near-cafe-abha",
+    region: "abha",
+    type: "cafe",
+    name: { ar: "نير كافيه", en: "Near Cafe" },
+    description: { ar: "مقهى في أبها يقدم القهوة والمشروبات.", en: "A café in Abha serving coffee and drinks." },
+    imageAlt: { ar: "صورة محلية لمقهى نير كافيه في أبها", en: "Local photo for Near Cafe in Abha" },
+    image: "images/food/near-cafe-abha.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Near%20Cafe%2C%20Abha%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "mahrani-restaurant-abha",
+    region: "abha",
+    type: "restaurant",
+    name: { ar: "مطعم مهراني", en: "Mahrani Restaurant" },
+    description: { ar: "مطعم في أبها يقدم خيارات طعام متنوعة.", en: "A restaurant in Abha serving varied food choices." },
+    imageAlt: { ar: "صورة محلية لمطعم مهراني في أبها", en: "Local photo for Mahrani Restaurant in Abha" },
+    image: "images/food/mahrani-restaurant-abha.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Mahrani%20Restaurant%2C%20Abha%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "olive-garden-restaurant-abha",
+    region: "abha",
+    type: "restaurant",
+    name: { ar: "مطعم أوليف جاردن", en: "Olive Garden Restaurant" },
+    description: { ar: "مطعم في أبها يقدم خيارات طعام متنوعة.", en: "A restaurant in Abha serving varied food choices." },
+    imageAlt: { ar: "صورة محلية لمطعم أوليف جاردن في أبها", en: "Local photo for Olive Garden Restaurant in Abha" },
+    image: "images/food/olive-garden-restaurant-abha.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Olive%20Garden%20Restaurant%2C%20Abha%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "traditional-terrace-restaurant-abha",
+    region: "abha",
+    type: "restaurant",
+    name: { ar: "مطعم التراس الشعبي", en: "Traditional Terrace Restaurant" },
+    description: { ar: "مطعم في أبها يقدم خيارات طعام متنوعة.", en: "A restaurant in Abha serving varied food choices." },
+    imageAlt: { ar: "صورة محلية لمطعم التراس الشعبي في أبها", en: "Local photo for Traditional Terrace Restaurant in Abha" },
+    image: "images/food/traditional-terrace-restaurant-abha.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Traditional%20Terrace%20Restaurant%2C%20Abha%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "namq-cafe-abha",
+    region: "abha",
+    type: "cafe",
+    name: { ar: "مقهى نمق", en: "Namq Cafe" },
+    description: { ar: "مقهى في أبها يقدم القهوة والمشروبات.", en: "A café in Abha serving coffee and drinks." },
+    imageAlt: { ar: "صورة محلية لمقهى نمق في أبها", en: "Local photo for Namq Cafe in Abha" },
+    image: "images/food/namq-cafe-abha.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Namq%20Cafe%2C%20Abha%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "shine-cafe-abha",
+    region: "abha",
+    type: "cafe",
+    name: { ar: "مقهى شاين", en: "Shine Cafe" },
+    description: { ar: "مقهى في أبها يقدم القهوة والمشروبات.", en: "A café in Abha serving coffee and drinks." },
+    imageAlt: { ar: "صورة محلية لمقهى شاين في أبها", en: "Local photo for Shine Cafe in Abha" },
+    image: "images/food/shine-cafe-abha.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Shine%20Cafe%2C%20Abha%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "butter-bakery-abha",
+    region: "abha",
+    type: "cafe",
+    name: { ar: "مقهى ومخبز بتر بيكري", en: "Butter Bakery" },
+    description: { ar: "مقهى ومخبز في أبها يقدم القهوة والمخبوزات.", en: "A café and bakery in Abha serving coffee and baked goods." },
+    imageAlt: { ar: "صورة محلية لمقهى ومخبز بتر بيكري في أبها", en: "Local photo for Butter Bakery in Abha" },
+    image: "images/food/butter-bakery-abha.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Butter%20Bakery%2C%20Abha%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "tallah-cafe-tanomah",
+    region: "tanomah",
+    type: "cafe",
+    name: { ar: "مقهى طلة", en: "Tallah Cafe" },
+    description: { ar: "مقهى في تنومة يقدم القهوة والمشروبات.", en: "A café in Tanomah serving coffee and drinks." },
+    imageAlt: { ar: "صورة محلية لمقهى طلة في تنومة", en: "Local photo for Tallah Cafe in Tanomah" },
+    image: "images/food/tallah-cafe-tanomah.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Tallah%20Cafe%2C%20Tanomah%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "haze-cafe-tanomah",
+    region: "tanomah",
+    type: "cafe",
+    name: { ar: "هيز كافيه", en: "Haze Cafe" },
+    description: { ar: "مقهى في تنومة يقدم القهوة والمشروبات.", en: "A café in Tanomah serving coffee and drinks." },
+    imageAlt: { ar: "صورة محلية لهيز كافيه في تنومة", en: "Local photo for Haze Cafe in Tanomah" },
+    image: "images/food/haze-cafe-tanomah.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Haze%20Cafe%2C%20Tanomah%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "reef-aljabal-restaurant-tanomah",
+    region: "tanomah",
+    type: "restaurant",
+    name: { ar: "مطعم ريف الجبل", en: "Reef Aljabal Restaurant" },
+    description: { ar: "مطعم في تنومة يقدم خيارات طعام محلية.", en: "A restaurant in Tanomah serving local food choices." },
+    imageAlt: { ar: "صورة محلية لمطعم ريف الجبل في تنومة", en: "Local photo for Reef Aljabal Restaurant in Tanomah" },
+    image: "images/food/reef-aljabal-restaurant-tanomah.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Reef%20Aljabal%20Restaurant%2C%20Tanomah%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "fona-restaurant-tanomah",
+    region: "tanomah",
+    type: "restaurant",
+    name: { ar: "مطعم فونا", en: "Fona Restaurant" },
+    description: { ar: "مطعم في تنومة يقدم خيارات طعام متنوعة.", en: "A restaurant in Tanomah serving varied food choices." },
+    imageAlt: { ar: "صورة محلية لمطعم فونا في تنومة", en: "Local photo for Fona Restaurant in Tanomah" },
+    image: "images/food/fona-restaurant-tanomah.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Fona%20Restaurant%2C%20Tanomah%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "kestletah-restaurant-alnamas",
+    region: "alnamas",
+    type: "restaurant",
+    name: { ar: "مطعم كستليتة", en: "Kestletah Restaurant" },
+    description: { ar: "مطعم في النماص يقدم خيارات طعام متنوعة.", en: "A restaurant in Al-Namas serving varied food choices." },
+    imageAlt: { ar: "صورة محلية لمطعم كستليتة في النماص", en: "Local photo for Kestletah Restaurant in Al-Namas" },
+    image: "images/food/kestletah-restaurant-alnamas.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Kestletah%20Restaurant%2C%20Al-Namas%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "soobi-cafe-restaurant-alnamas",
+    region: "alnamas",
+    type: "cafe",
+    name: { ar: "سوبي كافيه ومطعم", en: "Soobi Cafe & Restaurant" },
+    description: { ar: "مقهى ومطعم في النماص يقدم المشروبات وخيارات الطعام.", en: "A café and restaurant in Al-Namas serving drinks and food choices." },
+    imageAlt: { ar: "صورة محلية لسوبي كافيه ومطعم في النماص", en: "Local photo for Soobi Cafe & Restaurant in Al-Namas" },
+    image: "images/food/soobi-cafe-restaurant-alnamas.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Soobi%20Cafe%20and%20Restaurant%2C%20Al-Namas%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "yaghmah-cafe-alnamas",
+    region: "alnamas",
+    type: "cafe",
+    name: { ar: "مقهى ياغمة", en: "Yaghmah Cafe" },
+    description: { ar: "مقهى في النماص يقدم القهوة والمشروبات.", en: "A café in Al-Namas serving coffee and drinks." },
+    imageAlt: { ar: "صورة محلية لمقهى ياغمة في النماص", en: "Local photo for Yaghmah Cafe in Al-Namas" },
+    image: "images/food/yaghmah-cafe-alnamas.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Yaghmah%20Cafe%2C%20Al-Namas%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "mountain-park-restaurant-rijal-almaa",
+    region: "rijal",
+    type: "restaurant",
+    name: { ar: "مطعم ماونتن بارك", en: "Mountain Park Restaurant" },
+    description: { ar: "مطعم في رجال ألمع يقدم خيارات طعام متنوعة.", en: "A restaurant in Rijal Almaa serving varied food choices." },
+    imageAlt: { ar: "صورة محلية لمطعم ماونتن بارك في رجال ألمع", en: "Local photo for Mountain Park Restaurant in Rijal Almaa" },
+    image: "images/food/mountain-park-restaurant-rijal-almaa.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Mountain%20Park%20Restaurant%2C%20Rijal%20Almaa%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "rock-coffee-rijal-almaa",
+    region: "rijal",
+    type: "cafe",
+    name: { ar: "روك كوفي", en: "Rock Coffee" },
+    description: { ar: "مقهى في رجال ألمع يقدم القهوة والمشروبات.", en: "A café in Rijal Almaa serving coffee and drinks." },
+    imageAlt: { ar: "صورة محلية لروك كوفي في رجال ألمع", en: "Local photo for Rock Coffee in Rijal Almaa" },
+    image: "images/food/rock-coffee-rijal-almaa.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Rock%20Coffee%2C%20Rijal%20Almaa%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "raidan-hara-restaurant-rijal-almaa",
+    region: "rijal",
+    type: "restaurant",
+    name: { ar: "مطعم ريدان الحارة", en: "Raidan Hara Restaurant" },
+    description: { ar: "مطعم في رجال ألمع يقدم خيارات طعام متنوعة.", en: "A restaurant in Rijal Almaa serving varied food choices." },
+    imageAlt: { ar: "صورة محلية لمطعم ريدان الحارة في رجال ألمع", en: "Local photo for Raidan Hara Restaurant in Rijal Almaa" },
+    image: "images/food/raidan-hara-restaurant-rijal-almaa.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Raidan%20Hara%20Restaurant%2C%20Rijal%20Almaa%2C%20Saudi%20Arabia"
+  },
+  {
+    id: "hot-cold-cafe-rijal-almaa",
+    region: "rijal",
+    type: "cafe",
+    name: { ar: "هوت كولد كافيه", en: "Hot & Cold Cafe" },
+    description: { ar: "مقهى في رجال ألمع يقدم القهوة والمشروبات.", en: "A café in Rijal Almaa serving coffee and drinks." },
+    imageAlt: { ar: "صورة محلية لهوت كولد كافيه في رجال ألمع", en: "Local photo for Hot & Cold Cafe in Rijal Almaa" },
+    image: "images/food/hot-cold-cafe-rijal-almaa.jpg.png",
+    imageKind: "venue",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Hot%20and%20Cold%20Cafe%2C%20Rijal%20Almaa%2C%20Saudi%20Arabia"
+  }
+];

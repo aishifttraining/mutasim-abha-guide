@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Asir Guide — a bilingual local guide to explore Asir.">
+  <title>Asir Guide | دليل عسير</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skipToContent">تجاوز إلى المحتوى</a>
+
+  <header class="site-header" id="home">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="Asir Guide">
+        <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand__copy"><strong>ASIR</strong><small data-i18n="brandTagline">دليل التجارب المحلية</small></span>
+      </a>
+
+      <div class="header__actions">
+        <button class="language-switch" type="button" id="language-switch" aria-pressed="false" data-i18n-aria-label="languageSwitchAr" title="Switch to English">
+          <span class="language-switch__token" data-language-token="ar" data-active="true" aria-hidden="true">AR</span>
+          <span class="language-switch__divider" aria-hidden="true"></span>
+          <span class="language-switch__token" data-language-token="en" data-active="false" aria-hidden="true">EN</span>
+        </button>
+        <button class="theme-switch" type="button" id="theme-switch" aria-pressed="false" data-theme="light" data-i18n-aria-label="themeSwitchDark" title="تفعيل الوضع الداكن">
+          <svg class="theme-switch__icon theme-switch__icon--sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="theme-switch__icon theme-switch__icon--moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.4 14.1A8.5 8.5 0 0 1 9.9 3.6 8.5 8.5 0 1 0 20.4 14.1Z"></path></svg>
+          <span class="sr-only" data-i18n="themeSwitchDark">تفعيل الوضع الداكن</span>
+        </button>
+        <button class="menu-toggle" type="button" id="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" data-i18n-aria-label="openMenu">
+          <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="sr-only" data-i18n="menu">القائمة</span>
+        </button>
+      </div>
+
+      <nav class="primary-nav" id="primary-navigation" data-open="false" aria-label="Primary navigation" data-i18n-aria-label="primaryNavigation">
+        <a href="#about" data-i18n="navAbout">عن عسير</a>
+        <a href="#destinations" data-i18n="navDestinations">الوجهات</a>
+        <a href="#activities" data-i18n="navActivities">الأنشطة</a>
+        <a href="#stay" data-i18n="navStay">الإقامة والطعام</a>
+        <a href="#gallery" data-i18n="navGallery">معرض الصور</a>
+        <a href="#contact" data-i18n="navContact">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-slider section-pattern" id="region-hero-slider" role="region" aria-roledescription="carousel" aria-labelledby="hero-title" data-i18n-aria-label="heroSliderLabel">
+      <h1 id="hero-title" class="sr-only" data-i18n="heroPageTitle">دليل عسير: مناطق وتجارب محلية</h1>
+      <div class="hero-slider__stage">
+        <article class="hero-slide is-active" data-hero-slide="0" aria-hidden="false">
+          <div class="container hero-slide__grid"><div class="hero-slide__content"><p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="heroSliderEyebrow">اكتشف عسير</span></p><p class="hero-slide__count">01 / 05</p><h2 data-i18n="heroWelcomeTitle">مرحبًا بك في عسير</h2><p class="hero-slide__description" data-i18n="heroWelcomeText">رحلة هادئة بين الجبال والطبيعة والضيافة المحلية.</p><a class="button button--primary" href="#destinations"><span data-i18n="heroExploreCta">استكشف المنطقة</span><span class="button__arrow" aria-hidden="true">←</span></a></div><div class="hero-scene hero-scene--photo hero-scene--welcome" aria-hidden="true"><img class="hero-scene__photo" src="images/hero/asir-welcome.jpg.jpg" alt="" decoding="async" fetchpriority="high"><span class="hero-scene__shade"></span></div></div>
+        </article>
+        <article class="hero-slide" data-hero-slide="1" aria-hidden="true" inert>
+          <div class="container hero-slide__grid"><div class="hero-slide__content"><p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="heroSliderEyebrow">اكتشف عسير</span></p><p class="hero-slide__count">02 / 05</p><h2 data-i18n="heroAbhaTitle">أبها</h2><p class="hero-slide__description" data-i18n="heroAbhaText">هواء جبلي ولحظات ملوّنة وإيقاع مدينة هادئ.</p><a class="button button--primary" href="#destinations"><span data-i18n="heroExploreCta">استكشف المنطقة</span><span class="button__arrow" aria-hidden="true">←</span></a></div><div class="hero-scene hero-scene--photo hero-scene--abha" aria-hidden="true"><img class="hero-scene__photo" src="images/hero/abha-new.jpg.jpg" alt="" decoding="async"><span class="hero-scene__shade"></span><span class="hero-scene__mist hero-scene__mist--one"></span><span class="hero-scene__mist hero-scene__mist--two"></span><span class="hero-scene__mist hero-scene__mist--three"></span></div></div>
+        </article>
+        <article class="hero-slide" data-hero-slide="2" aria-hidden="true" inert>
+          <div class="container hero-slide__grid"><div class="hero-slide__content"><p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="heroSliderEyebrow">اكتشف عسير</span></p><p class="hero-slide__count">03 / 05</p><h2 data-i18n="heroTanomahTitle">تنومة</h2><p class="hero-slide__description" data-i18n="heroTanomahText">مسارات بين الأشجار وقمم متدرجة ليوم هادئ في الطبيعة.</p><a class="button button--primary" href="#destinations"><span data-i18n="heroExploreCta">استكشف المنطقة</span><span class="button__arrow" aria-hidden="true">←</span></a></div><div class="hero-scene hero-scene--photo hero-scene--tanomah" aria-hidden="true"><img class="hero-scene__photo" src="images/hero/tanomah-new.jpg.jpg" alt="" decoding="async"><span class="hero-scene__shade"></span></div></div>
+        </article>
+        <article class="hero-slide" data-hero-slide="3" aria-hidden="true" inert>
+          <div class="container hero-slide__grid"><div class="hero-slide__content"><p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="heroSliderEyebrow">اكتشف عسير</span></p><p class="hero-slide__count">04 / 05</p><h2 data-i18n="heroAlNamasTitle">النماص</h2><p class="hero-slide__description" data-i18n="heroAlNamasText">مرتفعات ضبابية ومشاهد خضراء بإيقاع أكثر هدوءًا.</p><a class="button button--primary" href="#destinations"><span data-i18n="heroExploreCta">استكشف المنطقة</span><span class="button__arrow" aria-hidden="true">←</span></a></div><div class="hero-scene hero-scene--photo hero-scene--alnamas" aria-hidden="true"><img class="hero-scene__photo" src="images/hero/alnamas-new.jpg.jpg" alt="" decoding="async"><span class="hero-scene__shade"></span><span class="hero-scene__mist hero-scene__mist--one"></span><span class="hero-scene__mist hero-scene__mist--two"></span><span class="hero-scene__mist hero-scene__mist--three"></span></div></div>
+        </article>
+        <article class="hero-slide" data-hero-slide="4" aria-hidden="true" inert>
+          <div class="container hero-slide__grid"><div class="hero-slide__content"><p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="heroSliderEyebrow">اكتشف عسير</span></p><p class="hero-slide__count">05 / 05</p><h2 data-i18n="heroRijalTitle">رجال ألمع</h2><p class="hero-slide__description" data-i18n="heroRijalText">بيوت حجرية وتفاصيل تراثية تحكي قصة باقية.</p><a class="button button--primary" href="#destinations"><span data-i18n="heroExploreCta">استكشف المنطقة</span><span class="button__arrow" aria-hidden="true">←</span></a></div><div class="hero-scene hero-scene--photo hero-scene--rijal" aria-hidden="true"><img class="hero-scene__photo" src="images/hero/rijal-almaa-new.jpg.jpg" alt="" decoding="async"><span class="hero-scene__shade"></span></div></div>
+        </article>
+      </div>
+      <div class="container hero-slider__controls" aria-label="Hero slider controls" data-i18n-aria-label="heroControlsLabel"><button class="hero-control" type="button" data-hero-prev data-i18n-aria-label="heroPrevious"><span aria-hidden="true">←</span><span class="sr-only" data-i18n="heroPrevious">المنطقة السابقة</span></button><div class="hero-slider__dots" role="group" data-i18n-aria-label="heroDotsLabel"><button class="hero-dot is-current" type="button" data-hero-dot="0" aria-current="true" data-i18n-aria-label="heroDotWelcome"><span class="sr-only" data-i18n="heroDotWelcome">اذهب إلى الترحيب بعسير، الشريحة ١ من ٥</span></button><button class="hero-dot" type="button" data-hero-dot="1" data-i18n-aria-label="heroDotAbha"><span class="sr-only" data-i18n="heroDotAbha">اذهب إلى أبها، المنطقة ٢ من ٥</span></button><button class="hero-dot" type="button" data-hero-dot="2" data-i18n-aria-label="heroDotTanomah"><span class="sr-only" data-i18n="heroDotTanomah">اذهب إلى تنومة، المنطقة ٣ من ٥</span></button><button class="hero-dot" type="button" data-hero-dot="3" data-i18n-aria-label="heroDotAlNamas"><span class="sr-only" data-i18n="heroDotAlNamas">اذهب إلى النماص، المنطقة ٤ من ٥</span></button><button class="hero-dot" type="button" data-hero-dot="4" data-i18n-aria-label="heroDotRijal"><span class="sr-only" data-i18n="heroDotRijal">اذهب إلى رجال ألمع، المنطقة ٥ من ٥</span></button></div><button class="hero-control" type="button" data-hero-next data-i18n-aria-label="heroNext"><span aria-hidden="true">→</span><span class="sr-only" data-i18n="heroNext">المنطقة التالية</span></button><button class="hero-control hero-control--rotation" type="button" data-hero-toggle aria-pressed="false" data-i18n-aria-label="heroPause"><span aria-hidden="true">Ⅱ</span><span class="sr-only" data-i18n="heroPause">إيقاف الانتقال التلقائي</span></button></div>
+      <p class="sr-only" id="hero-slider-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+
+    <div class="asir-divider" aria-hidden="true"></div>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="section-heading about__heading">
+          <p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="aboutEyebrow">نبذة عن المنطقة</span></p>
+          <h2 id="about-title" data-i18n="aboutTitle">بين الغيوم وحكايات المكان</h2>
+        </div>
+        <div class="about__body">
+          <p data-i18n="aboutTextOne">يساعدك Asir Guide على اكتشاف طبيعة عسير وقراها وتراثها ومذاقاتها المحلية وأنشطتها، خطوةً بخطوة.</p>
+          <p data-i18n="aboutTextTwo">اختر ما يناسب إيقاع رحلتك الهادئة، ثم انتقل إلى تفاصيل كل تجربة.</p>
+        </div>
+      </div>
+      <nav class="container feature-strip" aria-label="ملامح من عسير" data-i18n-aria-label="aboutThemes">
+        <a class="feature-strip__item" href="#activities">
+          <img class="feature-strip__image" src="images/activities/abha-al-soudah-mountain.jpg.jpg" alt="" width="1200" height="675" loading="lazy" decoding="async">
+          <span class="feature-strip__veil" aria-hidden="true"></span>
+          <span class="feature-strip__content"><span class="feature-icon feature-icon--mountain" aria-hidden="true"></span><span class="feature-strip__label" data-i18n="themeMountains">جبال ومسارات</span><span class="feature-strip__cta"><span data-i18n="aboutExplore">استكشف</span><span class="feature-strip__cta-arrow" aria-hidden="true">←</span></span></span>
+        </a>
+        <a class="feature-strip__item" href="#destinations">
+          <img class="feature-strip__image" src="images/destinations/rijal-almaa-destination.jpg.jpg" alt="" width="730" height="501" loading="lazy" decoding="async">
+          <span class="feature-strip__veil" aria-hidden="true"></span>
+          <span class="feature-strip__content"><span class="feature-icon feature-icon--home" aria-hidden="true"></span><span class="feature-strip__label" data-i18n="themeVillages">قرى وتراث</span><span class="feature-strip__cta"><span data-i18n="aboutExplore">استكشف</span><span class="feature-strip__cta-arrow" aria-hidden="true">←</span></span></span>
+        </a>
+        <a class="feature-strip__item feature-strip__item--art" href="#gallery">
+          <img class="feature-strip__image" src="images/decor/asir-pattern-divider.png.jpeg" alt="" width="512" height="512" loading="lazy" decoding="async">
+          <span class="feature-strip__veil" aria-hidden="true"></span>
+          <span class="feature-strip__content"><span class="feature-icon feature-icon--pattern" aria-hidden="true"></span><span class="feature-strip__label" data-i18n="themeArt">فن وحِرف</span><span class="feature-strip__cta"><span data-i18n="aboutExplore">استكشف</span><span class="feature-strip__cta-arrow" aria-hidden="true">←</span></span></span>
+        </a>
+        <a class="feature-strip__item" href="#stay">
+          <img class="feature-strip__image" src="images/food/mahrani-restaurant-abha.jpg.png" alt="" width="1200" height="675" loading="lazy" decoding="async">
+          <span class="feature-strip__veil" aria-hidden="true"></span>
+          <span class="feature-strip__content"><span class="feature-icon feature-icon--cup" aria-hidden="true"></span><span class="feature-strip__label" data-i18n="themeTaste">مذاقات محلية</span><span class="feature-strip__cta"><span data-i18n="aboutExplore">استكشف</span><span class="feature-strip__cta-arrow" aria-hidden="true">←</span></span></span>
+        </a>
+        <a class="feature-strip__item" href="#stay">
+          <img class="feature-strip__image" src="images/stays/asir-stays-cover.jpg.png" alt="" width="1024" height="576" loading="lazy" decoding="async">
+          <span class="feature-strip__veil" aria-hidden="true"></span>
+          <span class="feature-strip__content"><span class="feature-icon feature-icon--bed" aria-hidden="true"></span><span class="feature-strip__label" data-i18n="themeStays">الفنادق والسكن</span><span class="feature-strip__cta"><span data-i18n="aboutExploreStays">استكشف الإقامة</span><span class="feature-strip__cta-arrow" aria-hidden="true">←</span></span></span>
+        </a>
+      </nav>
+    </section>
+
+    <div class="asir-divider" aria-hidden="true"></div>
+
+    <section class="section section--tint" id="destinations" aria-labelledby="destinations-title">
+      <div class="container">
+        <div class="destination-slider" id="destination-slider" role="region" aria-roledescription="carousel" aria-labelledby="destinations-title" data-i18n-aria-label="destinationsCarouselLabel">
+          <div class="destination-slider__stage">
+            <div class="section-heading section-heading--split destination-slider__heading">
+              <div>
+                <p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="destinationsEyebrow">ابدأ من هنا</span></p>
+                <h2 id="destinations-title" data-i18n="destinationsTitle">وجهات تترك أثرًا</h2>
+              </div>
+              <p class="section-heading__description" data-i18n="destinationsDescription">اختيارات أولية تساعدك على تصور تنوع المشاهد والتجارب في المنطقة.</p>
+            </div>
+
+            <article class="place-card destination-slide is-active" data-slide="0" aria-hidden="false">
+              <div class="destination-slide__media" role="img" data-i18n-aria-label="abhaVisualLabel"><img src="images/destinations/abha-destination.jpg.jpg" alt="" width="728" height="407" decoding="async"></div>
+              <div class="place-card__content"><p class="card__index">01 <span class="sr-only" data-i18n="slideOfFour">من ٤</span></p><h3 data-i18n="abhaTitle">أبها</h3><ul class="destination-tags" data-i18n-aria-label="abhaTagsLabel"><li data-i18n="tagMountains">جبال</li><li data-i18n="tagMildWeather">أجواء معتدلة</li><li data-i18n="tagNature">طبيعة</li></ul><p data-i18n="abhaText">مدينة تمنح رحلتك نقطة انطلاق تجمع المشهد الحضري والأجواء الجبلية.</p><button class="card__toggle" type="button" aria-expanded="false" aria-controls="abha-details"><span data-i18n="discoverMore">اكتشف المزيد</span><i aria-hidden="true">+</i></button><div class="card__details" id="abha-details" hidden><p data-i18n="abhaDetails">دع الوقت يقودك بين المقاهي والمساحات العامة والمشاهد القريبة من المدينة.</p></div></div>
+            </article>
+            <article class="place-card destination-slide" data-slide="1" aria-hidden="true" inert>
+              <div class="destination-slide__media" role="img" data-i18n-aria-label="tanomahVisualLabel"><img src="images/destinations/tanomah-destination.jpg.jpg" alt="" width="645" height="427" loading="lazy" decoding="async"></div>
+              <div class="place-card__content"><p class="card__index">02 <span class="sr-only" data-i18n="slideOfFour">من ٤</span></p><h3 data-i18n="tanomahTitle">تنومة</h3><ul class="destination-tags" data-i18n-aria-label="tanomahTagsLabel"><li data-i18n="tagForests">غابات</li><li data-i18n="tagMountains">جبال</li><li data-i18n="tagRelaxation">استرخاء</li></ul><p data-i18n="tanomahText">وجهة جبلية تدعوك إلى التمهل بين المنعطفات الخضراء والهواء المفتوح.</p><button class="card__toggle" type="button" aria-expanded="false" aria-controls="tanomah-details"><span data-i18n="discoverMore">اكتشف المزيد</span><i aria-hidden="true">+</i></button><div class="card__details" id="tanomah-details" hidden><p data-i18n="tanomahDetails">اختر وقتًا هادئًا للتوقف وملاحظة تغير المشاهد على امتداد الطريق.</p></div></div>
+            </article>
+            <article class="place-card destination-slide" data-slide="2" aria-hidden="true" inert>
+              <div class="destination-slide__media" role="img" data-i18n-aria-label="alNamasVisualLabel"><img src="images/destinations/alnamas-destination.jpg.jpg" alt="" width="688" height="539" loading="lazy" decoding="async"></div>
+              <div class="place-card__content"><p class="card__index">03 <span class="sr-only" data-i18n="slideOfFour">من ٤</span></p><h3 data-i18n="alNamasTitle">النماص</h3><ul class="destination-tags" data-i18n-aria-label="alNamasTagsLabel"><li data-i18n="tagMist">ضباب</li><li data-i18n="tagNature">طبيعة</li><li data-i18n="tagHeritage">تراث</li></ul><p data-i18n="alNamasText">مكان مناسب لتأمل امتداد المرتفعات وتفاصيل الطبيعة القريبة.</p><button class="card__toggle" type="button" aria-expanded="false" aria-controls="alnamas-details"><span data-i18n="discoverMore">اكتشف المزيد</span><i aria-hidden="true">+</i></button><div class="card__details" id="alnamas-details" hidden><p data-i18n="alNamasDetails">دع خطتك مرنة لتمنح نفسك فرصة لاستكشاف المشاهد والقرى القريبة بهدوء.</p></div></div>
+            </article>
+            <article class="place-card destination-slide" data-slide="3" aria-hidden="true" inert>
+              <div class="destination-slide__media" role="img" data-i18n-aria-label="rijalVisualLabel"><img src="images/destinations/rijal-almaa-destination.jpg.jpg" alt="" width="730" height="501" loading="lazy" decoding="async"></div>
+              <div class="place-card__content"><p class="card__index">04 <span class="sr-only" data-i18n="slideOfFour">من ٤</span></p><h3 data-i18n="rijalTitle">رجال ألمع</h3><ul class="destination-tags" data-i18n-aria-label="rijalTagsLabel"><li data-i18n="tagHeritage">تراث</li><li data-i18n="tagArchitecture">عمارة</li><li data-i18n="tagNature">طبيعة</li></ul><p data-i18n="rijalText">قرية تراثية تشتهر بمبانيها الحجرية متعددة الطوابق وتفاصيلها المعمارية الملونة، وتقدم تجربة تجمع بين التاريخ والطبيعة.</p><button class="card__toggle" type="button" aria-expanded="false" aria-controls="rijal-details"><span data-i18n="discoverMore">اكتشف المزيد</span><i aria-hidden="true">+</i></button><div class="card__details" id="rijal-details" hidden><p data-i18n="rijalDetails">تأمل تفاصيل المباني والألوان المحيطة، واترك لنفسك وقتًا لاكتشاف المشهد الطبيعي القريب.</p></div></div>
+            </article>
+
+            <div class="destination-slider__controls" aria-label="Slider controls" data-i18n-aria-label="destinationsControlsLabel">
+              <button class="slider-button slider-button--previous" type="button" data-slider-action="previous" data-i18n-aria-label="destinationPrevious"><span aria-hidden="true">←</span><span class="sr-only" data-i18n="destinationPrevious">الوجهة السابقة</span></button>
+              <div class="slider-dots" role="group" aria-label="Choose destination" data-i18n-aria-label="destinationDotsLabel">
+                <button class="slider-dot is-current" type="button" data-slider-dot="0" aria-current="true" data-i18n-aria-label="destinationDotAbha"><img src="images/destinations/abha-destination.jpg.jpg" alt="" width="728" height="407" loading="lazy" decoding="async"><span class="sr-only" data-i18n="destinationDotAbha">اذهب إلى أبها، الوجهة ١ من ٤</span></button>
+                <button class="slider-dot" type="button" data-slider-dot="1" data-i18n-aria-label="destinationDotTanomah"><img src="images/destinations/tanomah-destination.jpg.jpg" alt="" width="645" height="427" loading="lazy" decoding="async"><span class="sr-only" data-i18n="destinationDotTanomah">اذهب إلى تنومة، الوجهة ٢ من ٤</span></button>
+                <button class="slider-dot" type="button" data-slider-dot="2" data-i18n-aria-label="destinationDotAlNamas"><img src="images/destinations/alnamas-destination.jpg.jpg" alt="" width="688" height="539" loading="lazy" decoding="async"><span class="sr-only" data-i18n="destinationDotAlNamas">اذهب إلى النماص، الوجهة ٣ من ٤</span></button>
+                <button class="slider-dot" type="button" data-slider-dot="3" data-i18n-aria-label="destinationDotRijal"><img src="images/destinations/rijal-almaa-destination.jpg.jpg" alt="" width="730" height="501" loading="lazy" decoding="async"><span class="sr-only" data-i18n="destinationDotRijal">اذهب إلى رجال ألمع، الوجهة ٤ من ٤</span></button>
+              </div>
+              <button class="slider-button slider-button--next" type="button" data-slider-action="next" data-i18n-aria-label="destinationNext"><span aria-hidden="true">→</span><span class="sr-only" data-i18n="destinationNext">الوجهة التالية</span></button>
+              <button class="slider-button slider-button--rotation" type="button" data-slider-action="rotation" aria-pressed="false" data-i18n-aria-label="destinationPause"><span aria-hidden="true">Ⅱ</span><span class="sr-only" data-i18n="destinationPause">إيقاف الانتقال التلقائي</span></button>
+            </div>
+          </div>
+          <p class="sr-only" id="destination-slider-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="asir-divider" aria-hidden="true"></div>
+
+    <section class="section activities" id="activities" aria-labelledby="activities-title">
+      <div class="container activities__grid">
+        <div class="activities-photo-slider" id="activities-photo-slider" data-activity-photo-slider hidden></div>
+        <div>
+          <p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="activitiesEyebrow">جرّب عسير</span></p>
+          <h2 id="activities-title" data-i18n="activitiesTitle">استكشف الأنشطة والفعاليات في عسير</h2>
+          <p class="activities__intro" data-i18n="activitiesIntro">استكشف المتنزهات والمواقع الطبيعية ومسارات الهايكنج والفعاليات والتجارب، مع مرافق مقترحة وروابط مباشرة إلى خرائط Google لتخطيط زيارتك.</p>
+          <ul class="activities__indicators" data-i18n-aria-label="activityIndicatorsLabel">
+            <li class="activities__indicator"><span class="activities__indicator-icon activities__indicator-icon--nature" aria-hidden="true"></span><span data-i18n="activityIndicatorNature">متنزهات ومواقع طبيعية</span></li>
+            <li class="activities__indicator"><span class="activities__indicator-icon activities__indicator-icon--hiking" aria-hidden="true"></span><span data-i18n="activityIndicatorHiking">هايكنج ومسارات مشي</span></li>
+            <li class="activities__indicator"><span class="activities__indicator-icon activities__indicator-icon--events" aria-hidden="true"></span><span data-i18n="activityIndicatorEvents">فعاليات وتجارب</span></li>
+            <li class="activities__indicator"><span class="activities__indicator-icon activities__indicator-icon--plan" aria-hidden="true"></span><span data-i18n="activityIndicatorPlan">خطط رحلتك</span></li>
+          </ul>
+          <div class="activities-explorer" id="activities-explorer">
+            <div class="activities-explorer__chooser" data-activity-chooser>
+              <p class="activities-explorer__prompt" data-i18n="activityChooseRegion">اختر المنطقة لعرض المتنزهات والفعاليات</p>
+              <div class="activities-explorer__regions" role="group" data-i18n-aria-label="activityRegionsLabel">
+                <button class="activity-region-button" type="button" data-activity-region="abha" aria-pressed="false">
+                  <img class="activity-region-button__image" src="images/destinations/abha-destination.jpg.jpg" alt="" width="728" height="407" loading="lazy" decoding="async">
+                  <span class="activity-region-button__scrim" aria-hidden="true"></span>
+                  <span class="activity-region-button__content"><span class="activity-region-button__index" aria-hidden="true">01</span><span class="activity-region-button__name" data-i18n="activityRegionAbha">أبها</span></span>
+                </button>
+                <button class="activity-region-button" type="button" data-activity-region="tanomah" aria-pressed="false">
+                  <img class="activity-region-button__image" src="images/destinations/tanomah-destination.jpg.jpg" alt="" width="645" height="427" loading="lazy" decoding="async">
+                  <span class="activity-region-button__scrim" aria-hidden="true"></span>
+                  <span class="activity-region-button__content"><span class="activity-region-button__index" aria-hidden="true">02</span><span class="activity-region-button__name" data-i18n="activityRegionTanomah">تنومة</span></span>
+                </button>
+                <button class="activity-region-button" type="button" data-activity-region="alnamas" aria-pressed="false">
+                  <img class="activity-region-button__image" src="images/destinations/alnamas-destination.jpg.jpg" alt="" width="688" height="539" loading="lazy" decoding="async">
+                  <span class="activity-region-button__scrim" aria-hidden="true"></span>
+                  <span class="activity-region-button__content"><span class="activity-region-button__index" aria-hidden="true">03</span><span class="activity-region-button__name" data-i18n="activityRegionAlNamas">النماص</span></span>
+                </button>
+                <button class="activity-region-button" type="button" data-activity-region="rijal" aria-pressed="false">
+                  <img class="activity-region-button__image" src="images/destinations/rijal-almaa-destination.jpg.jpg" alt="" width="730" height="501" loading="lazy" decoding="async">
+                  <span class="activity-region-button__scrim" aria-hidden="true"></span>
+                  <span class="activity-region-button__content"><span class="activity-region-button__index" aria-hidden="true">04</span><span class="activity-region-button__name" data-i18n="activityRegionRijal">رجال ألمع</span></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="activities-explorer__results" data-activity-results hidden>
+              <div class="activities-explorer__results-header">
+                <div>
+                  <p class="activities-explorer__region-label" data-i18n="activitySelectedRegion">دليل المنطقة</p>
+                  <h3 data-activity-selected-region></h3>
+                </div>
+                <button class="activities-explorer__back" type="button" data-activity-change-region><span aria-hidden="true">←</span><span data-i18n="activityChangeRegion">اختر منطقة أخرى</span></button>
+              </div>
+
+              <div class="activities-explorer__tools">
+                <section class="activities-explorer__plan" aria-labelledby="activity-plan-title">
+                  <div class="activities-explorer__tools-heading">
+                    <div>
+                      <p class="activities-explorer__tool-kicker" data-i18n="activityPlanKicker">خطّط بهدوء</p>
+                      <h4 id="activity-plan-title" data-i18n="activityBuildPlan">اختر جدولك بنفسك</h4>
+                    </div>
+                    <button class="activities-explorer__clear" type="button" data-activity-clear-plan disabled data-i18n="activityClearPlan">مسح الجدول</button>
+                  </div>
+                  <p class="activities-explorer__plan-count" data-activity-plan-count></p>
+                  <p class="activities-explorer__plan-empty" data-activity-plan-empty data-i18n="activityPlanEmpty">أضف أي بطاقة من الأقسام أدناه لتظهر اختياراتك هنا.</p>
+                  <ul class="activities-explorer__plan-list" data-activity-plan-list></ul>
+                </section>
+                <section class="activities-explorer__surprise" aria-labelledby="activity-surprise-title">
+                  <p class="activities-explorer__tool-kicker" data-i18n="activitySurpriseKicker">اقتراح سريع</p>
+                  <h4 id="activity-surprise-title" data-i18n="activitySurpriseTitle">اختيار عشوائي</h4>
+                  <p data-i18n="activitySurpriseIntro">اختر بطاقة عشوائية من هذه المنطقة فقط.</p>
+                  <button class="activities-explorer__surprise-button" type="button" data-activity-surprise data-i18n="activitySurpriseButton">فاجئني باقتراح</button>
+                </section>
+              </div>
+
+              <section class="activities-explorer__guides" aria-labelledby="activity-guides-title">
+                <div class="activities-explorer__guides-heading">
+                  <div>
+                    <p class="activities-explorer__tool-kicker" data-i18n="activityGuidesKicker">ملفات تعريف للعرض</p>
+                    <h4 id="activity-guides-title" data-i18n="activityGuidesTitle">ابحث عن مرشد سياحي</h4>
+                  </div>
+                  <p class="activities-explorer__guides-intro" data-i18n="activityGuidesIntro">اختر مرشدًا مناسبًا لطابع رحلتك، وسيظهر اختيارك داخل جدول الرحلة الحالي.</p>
+                </div>
+                <p class="activities-explorer__guides-disclosure" data-i18n="activityGuidesDisclosure">الأسماء والصور التالية ملفات تعريف تجريبية للعرض فقط وليست قائمة مرشدين حقيقية.</p>
+                <div class="activities-explorer__guide-grid" data-activity-guide-grid>
+                  <article class="activity-guide-card" data-activity-guide-card="guide-nawaf">
+                    <img class="activity-guide-card__image" src="images/guide/guide-1.jpg.webp" alt="صورة شخصية تجريبية للمرشد التجريبي ١" data-i18n-alt="activityGuideNawafImageAlt" width="1024" height="1024" loading="lazy" decoding="async">
+                    <div class="activity-guide-card__content">
+                      <h5 data-i18n="activityGuideNawafName">المرشد التجريبي ١</h5>
+                      <dl class="activity-guide-card__details">
+                        <div><dt data-i18n="activityGuideExperienceLabel">نوع التجربة</dt><dd data-i18n="activityGuideNawafExperience">نزهات طبيعية هادئة</dd></div>
+                        <div><dt data-i18n="activityGuideRegionLabel">المنطقة المغطاة</dt><dd data-i18n="activityGuideNawafRegion">أبها والسودة</dd></div>
+                      </dl>
+                      <p class="activity-guide-card__selected" data-activity-guide-selected hidden data-i18n="activityGuideSelectedBadge">مرشد محدد</p>
+                      <button class="activity-guide-card__select" type="button" data-activity-guide-select="guide-nawaf" aria-pressed="false" data-i18n="activityGuideChoose">اختيار هذا المرشد</button>
+                    </div>
+                  </article>
+                  <article class="activity-guide-card" data-activity-guide-card="guide-salem">
+                    <img class="activity-guide-card__image" src="images/guide/guide-2.jpg.webp" alt="صورة شخصية تجريبية للمرشد التجريبي ٢" data-i18n-alt="activityGuideSalemImageAlt" width="800" height="800" loading="lazy" decoding="async">
+                    <div class="activity-guide-card__content">
+                      <h5 data-i18n="activityGuideSalemName">المرشد التجريبي ٢</h5>
+                      <dl class="activity-guide-card__details">
+                        <div><dt data-i18n="activityGuideExperienceLabel">نوع التجربة</dt><dd data-i18n="activityGuideSalemExperience">حكايات المكان والأسواق</dd></div>
+                        <div><dt data-i18n="activityGuideRegionLabel">المنطقة المغطاة</dt><dd data-i18n="activityGuideSalemRegion">تنومة والنماص</dd></div>
+                      </dl>
+                      <p class="activity-guide-card__selected" data-activity-guide-selected hidden data-i18n="activityGuideSelectedBadge">مرشد محدد</p>
+                      <button class="activity-guide-card__select" type="button" data-activity-guide-select="guide-salem" aria-pressed="false" data-i18n="activityGuideChoose">اختيار هذا المرشد</button>
+                    </div>
+                  </article>
+                  <article class="activity-guide-card" data-activity-guide-card="guide-majed">
+                    <img class="activity-guide-card__image" src="images/guide/guide-3.jpg.webp" alt="صورة شخصية تجريبية للمرشد التجريبي ٣" data-i18n-alt="activityGuideMajedImageAlt" width="1024" height="1024" loading="lazy" decoding="async">
+                    <div class="activity-guide-card__content">
+                      <h5 data-i18n="activityGuideMajedName">المرشد التجريبي ٣</h5>
+                      <dl class="activity-guide-card__details">
+                        <div><dt data-i18n="activityGuideExperienceLabel">نوع التجربة</dt><dd data-i18n="activityGuideMajedExperience">تفاصيل القرية والتراث</dd></div>
+                        <div><dt data-i18n="activityGuideRegionLabel">المنطقة المغطاة</dt><dd data-i18n="activityGuideMajedRegion">رجال ألمع</dd></div>
+                      </dl>
+                      <p class="activity-guide-card__selected" data-activity-guide-selected hidden data-i18n="activityGuideSelectedBadge">مرشد محدد</p>
+                      <button class="activity-guide-card__select" type="button" data-activity-guide-select="guide-majed" aria-pressed="false" data-i18n="activityGuideChoose">اختيار هذا المرشد</button>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <div class="activities-explorer__tabs" role="tablist" aria-orientation="horizontal" data-i18n-aria-label="activityTabsLabel">
+                <button id="activity-tab-nature" type="button" role="tab" aria-selected="true" aria-controls="activity-panel-nature" tabindex="0" data-activity-tab="nature" data-i18n="activityTabNature">متنزهات ومواقع طبيعية</button>
+                <button id="activity-tab-events" type="button" role="tab" aria-selected="false" aria-controls="activity-panel-events" tabindex="-1" data-activity-tab="activity" data-i18n="activityTabEvents">أنشطة وفعاليات</button>
+              </div>
+
+              <div id="activity-panel-nature" class="activities-explorer__panel" role="tabpanel" aria-labelledby="activity-tab-nature" data-activity-panel="nature">
+                <div class="activities-explorer__card-grid" data-activity-card-grid="nature"></div>
+                <div class="activities-explorer__empty" data-activity-empty="nature" hidden><span aria-hidden="true">⌁</span><p data-activity-empty-copy="nature"></p></div>
+              </div>
+              <div id="activity-panel-events" class="activities-explorer__panel" role="tabpanel" aria-labelledby="activity-tab-events" data-activity-panel="activity" hidden>
+                <div class="activities-explorer__card-grid" data-activity-card-grid="activity"></div>
+                <div class="activities-explorer__empty" data-activity-empty="activity" hidden><span aria-hidden="true">⌁</span><p data-activity-empty-copy="activity"></p></div>
+              </div>
+              <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-activity-status></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="asir-divider" aria-hidden="true"></div>
+
+    <section class="section stay section--deep" id="stay" aria-labelledby="stay-title">
+      <div class="stay__pattern" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow eyebrow--light"><span aria-hidden="true"></span><span data-i18n="stayEyebrow">خطط براحة</span></p>
+          <h2 id="stay-title" data-i18n="stayTitle">الفنادق والسكن والمذاقات القريبة</h2>
+          <p data-i18n="stayIntro">اختر منطقتك أولًا للبحث عن السكن، ثم استكشف اقتراحات المقاهي والمطاعم القريبة.</p>
+        </div>
+        <div class="stays-explorer" id="stays-explorer">
+          <button class="stays-explorer__trigger" type="button" data-stays-explorer-trigger aria-expanded="false" aria-controls="stays-explorer-panel">
+            <span class="stays-explorer__trigger-icon" aria-hidden="true">⌂</span>
+            <span data-i18n="staysExplorerTrigger">الفنادق والسكن</span>
+            <span class="stays-explorer__trigger-arrow" aria-hidden="true">↓</span>
+          </button>
+          <div class="stays-explorer__panel" id="stays-explorer-panel" hidden>
+            <div class="stays-explorer__chooser" data-stays-chooser>
+              <p class="stays-explorer__prompt" data-i18n="staysChooseRegion">اختر المنطقة</p>
+              <div class="stays-explorer__regions" role="group" data-i18n-aria-label="staysRegionsLabel">
+                <button type="button" class="stays-region-button" data-stays-region="abha" aria-pressed="false" data-i18n="staysRegionAbha">أبها</button>
+                <button type="button" class="stays-region-button" data-stays-region="tanomah" aria-pressed="false" data-i18n="staysRegionTanomah">تنومة</button>
+                <button type="button" class="stays-region-button" data-stays-region="alnamas" aria-pressed="false" data-i18n="staysRegionAlNamas">النماص</button>
+                <button type="button" class="stays-region-button" data-stays-region="rijal" aria-pressed="false" data-i18n="staysRegionRijal">رجال ألمع</button>
+              </div>
+            </div>
+            <div class="stays-explorer__results" data-stays-results hidden>
+              <div class="stays-explorer__results-header">
+                <div>
+                  <p class="stays-explorer__region-label" data-i18n="staysSelectedRegion">السكن في</p>
+                  <h3 data-stays-selected-region></h3>
+                  <p class="stays-explorer__count" data-stays-count></p>
+                </div>
+                <button class="stays-explorer__back" type="button" data-stays-change-region><span aria-hidden="true">←</span><span data-i18n="staysChangeRegion">اختر منطقة أخرى</span></button>
+              </div>
+              <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-stays-status></p>
+              <div class="stays-explorer__place-grid" data-stays-place-grid></div>
+              <div class="stays-explorer__empty" data-stays-empty hidden>
+                <span class="stays-explorer__empty-icon" aria-hidden="true">⌂</span>
+                <p data-stays-empty-copy></p>
+                <button class="stays-explorer__back stays-explorer__back--empty" type="button" data-stays-change-region><span aria-hidden="true">←</span><span data-i18n="staysChangeRegion">اختر منطقة أخرى</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="food-explorer" id="food-explorer">
+          <button class="food-explorer__trigger" type="button" data-food-explorer-trigger aria-expanded="false" aria-controls="food-explorer-panel">
+            <span class="food-explorer__trigger-icon" aria-hidden="true">⌖</span>
+            <span data-i18n="foodExplorerTrigger">المطاعم والمقاهي</span>
+            <span class="food-explorer__trigger-arrow" aria-hidden="true">↓</span>
+          </button>
+          <div class="food-explorer__panel" id="food-explorer-panel" hidden>
+            <div class="food-explorer__chooser" data-food-chooser>
+              <p class="food-explorer__prompt" data-i18n="foodChooseRegion">اختر المنطقة</p>
+              <div class="food-explorer__regions" role="group" data-i18n-aria-label="foodRegionsLabel">
+                <button type="button" class="food-region-button" data-food-region="abha" data-i18n="foodRegionAbha">أبها</button>
+                <button type="button" class="food-region-button" data-food-region="tanomah" data-i18n="foodRegionTanomah">تنومة</button>
+                <button type="button" class="food-region-button" data-food-region="alnamas" data-i18n="foodRegionAlNamas">النماص</button>
+                <button type="button" class="food-region-button" data-food-region="rijal" data-i18n="foodRegionRijal">رجال ألمع</button>
+              </div>
+            </div>
+            <div class="food-explorer__results" data-food-results hidden>
+              <div class="food-explorer__results-header">
+                <div><p class="food-explorer__region-label" data-i18n="foodSelectedRegion">اقتراحات قريبة من</p><h3 data-food-selected-region></h3></div>
+                <button class="food-explorer__back" type="button" data-food-change-region><span aria-hidden="true">←</span><span data-i18n="foodChangeRegion">اختر منطقة أخرى</span></button>
+              </div>
+              <div class="food-explorer__filters" role="group" data-i18n-aria-label="foodFiltersLabel">
+                <button type="button" data-food-filter="all" aria-pressed="true" data-i18n="foodFilterAll">الكل</button>
+                <button type="button" data-food-filter="cafe" aria-pressed="false" data-i18n="foodFilterCafes">مقاهي</button>
+                <button type="button" data-food-filter="restaurant" aria-pressed="false" data-i18n="foodFilterRestaurants">مطاعم</button>
+              </div>
+              <section class="food-explorer__surprise" data-food-surprise aria-labelledby="food-surprise-title">
+                <div class="food-explorer__surprise-heading"><div><p class="food-explorer__surprise-kicker" data-i18n="foodSurpriseKicker">اقتراح سريع</p><h4 id="food-surprise-title" data-i18n="foodSurpriseTitle">فاجئني</h4><p class="food-explorer__surprise-intro" data-i18n="foodSurpriseIntro">اختر اقتراحًا عشوائيًا من المنطقة والتصنيف الحاليين.</p></div><button class="food-explorer__surprise-button" type="button" data-food-surprise-button data-i18n="foodSurpriseButton">فاجئني</button></div>
+                <div class="food-explorer__surprise-result" data-food-surprise-result hidden></div>
+                <button class="food-explorer__surprise-again" type="button" data-food-surprise-again hidden data-i18n="foodSurpriseAgain">فاجئني مرة أخرى</button>
+              </section>
+              <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-food-status></p>
+              <div class="food-explorer__place-grid" data-food-place-grid></div>
+              <div class="food-explorer__empty" data-food-empty hidden>
+                <span class="food-explorer__empty-icon" aria-hidden="true">⌁</span>
+                <p data-food-empty-copy></p>
+                <button class="food-explorer__back food-explorer__back--empty" type="button" data-food-change-region><span aria-hidden="true">←</span><span data-i18n="foodChangeRegion">اختر منطقة أخرى</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="asir-divider" aria-hidden="true"></div>
+
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading section-heading--split">
+          <div><p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="galleryEyebrow">ذاكرة بصرية</span></p><h2 id="gallery-title" data-i18n="galleryTitle">مشاهد من عسير</h2></div>
+          <p class="section-heading__description" data-i18n="galleryDescription">صور توضيحية مؤقتة تعبّر عن أنواع المشاهد التي يمكن استبدالها بصور محلية مرخّصة لاحقًا.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-card gallery-card--one" role="img" data-i18n-aria-label="galleryOneLabel"><div class="gallery-card__image"><img src="images/gallery/asir-mountain-horizon.jpg.jpg" alt="" width="735" height="1086" loading="lazy" decoding="async"></div><figcaption data-i18n="galleryOneCaption">أفق جبلي</figcaption></figure>
+          <figure class="gallery-card gallery-card--two" role="img" data-i18n-aria-label="galleryTwoLabel"><div class="gallery-card__image"><img src="images/gallery/asir-qatt-patterns.jpg.jpg" alt="" width="697" height="523" loading="lazy" decoding="async"></div><figcaption data-i18n="galleryTwoCaption">ألوان ونقوش</figcaption></figure>
+          <figure class="gallery-card gallery-card--three" role="img" data-i18n-aria-label="galleryThreeLabel"><div class="gallery-card__image"><img src="images/gallery/asir-heritage-details.jpg.jpg" alt="" width="736" height="920" loading="lazy" decoding="async"></div><figcaption data-i18n="galleryThreeCaption">تفاصيل المكان</figcaption></figure>
+          <figure class="gallery-card gallery-card--four" role="img" data-i18n-aria-label="galleryFourLabel"><div class="gallery-card__image"><img src="images/gallery/asir-open-air.jpg.jpg" alt="" width="736" height="925" loading="lazy" decoding="async"></div><figcaption data-i18n="galleryFourCaption">هواء مفتوح</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="asir-divider" aria-hidden="true"></div>
+
+    <section class="contact section-pattern" id="contact" aria-labelledby="contact-title">
+      <div class="container contact__panel">
+        <div class="contact__copy">
+          <p class="eyebrow"><span aria-hidden="true"></span><span data-i18n="contactEyebrow">قبل أن تنطلق</span></p>
+          <h2 id="contact-title" data-i18n="contactTitle">دع الرحلة تبدأ بسؤال جيد</h2>
+          <p data-i18n="contactText">استخدم هذا الدليل كبداية، ثم تحقق من المواعيد ووسائل التنقل والخدمات المتاحة محليًا قبل زيارة أي مكان.</p>
+        </div>
+        <div class="contact__note">
+          <span class="contact__note-icon" aria-hidden="true">✦</span>
+          <p data-i18n="contactNote">أفضل الرحلات تترك مساحة للاكتشاف.</p>
+          <a class="button button--primary" href="#home"><span data-i18n="backToTop">العودة للبداية</span><span class="button__arrow" aria-hidden="true">↑</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <a class="brand brand--footer" href="#home" aria-label="Asir Guide"><span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand__copy"><strong>ASIR</strong><small data-i18n="brandTagline">دليل التجارب المحلية</small></span></a>
+      <p data-i18n="footerText">Asir Guide — صفحة تعريفية محلية للتجارب السياحية.</p>
+      <a class="footer__top" href="#home" data-i18n-aria-label="backToTop" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <div class="sr-only" id="language-status" aria-live="polite" aria-atomic="true"></div>
+  <div class="sr-only" id="theme-status" aria-live="polite" aria-atomic="true"></div>
+  <script src="sample-data/food-places.js"></script>
+  <script src="sample-data/activity-places.js"></script>
+  <script src="sample-data/stay-places.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
